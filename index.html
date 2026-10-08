@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siya's Cakes and More | Premium Bakery in Abuja</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            cream: '#FFFCEE',
+                            yellow: '#FDF2B3',
+                            peach: '#F48C68',
+                            brown: '#6B3E2E',
+                            darkbrown: '#4A2A1E',
+                            accent: '#D95325'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream text-brand-darkbrown font-sans antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-brand-cream/95 backdrop-blur-md shadow-sm border-b border-brand-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <!-- Logo Image -->
+                <img src="1000597778.jpg" alt="Siya's Cakes and More Logo" class="w-12 h-12 rounded-full object-cover border-2 border-brand-peach shadow-sm">
+                <span class="text-xl font-bold tracking-tight text-brand-brown">
+                    Siya's <span class="text-brand-accent">Cakes</span> & More
+                </span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm text-brand-brown">
+                <a href="#about" class="hover:text-brand-accent transition">About</a>
+                <a href="#menu" class="hover:text-brand-accent transition">Menu & Pricing</a>
+                <a href="#calculator" class="hover:text-brand-accent transition">Chinchin Calculator</a>
+            </nav>
+            <a href="#order" class="bg-brand-accent text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-brand-brown transition shadow-sm">
+                Order Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-b from-brand-yellow/30 to-brand-cream">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <!-- Logo Showcase in Hero -->
+            <div class="flex justify-center mb-6">
+                <img src="1000597778.jpg" alt="Siya's Cakes and More Logo" class="w-28 h-28 rounded-full object-cover border-4 border-white shadow-md">
+            </div>
+            <span class="inline-block px-4 py-1 rounded-full bg-brand-yellow text-brand-brown font-semibold text-xs tracking-wide uppercase mb-4 border border-brand-peach/30">
+                Abuja, Nigeria 📍
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-brand-brown leading-tight">
+                Freshly Baked Delights & <br class="hidden sm:inline"/> Signature Milky Chinchin
+            </h1>
+            <p class="mt-4 text-lg text-brand-brown/80 max-w-2xl mx-auto">
+                Bringing joy to every occasion — from custom birthday cakes and pastries to everyday crunchy snacking delivered straight to your door.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#menu" class="bg-brand-accent text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-brand-brown transition">
+                    Explore Our Menu
+                </a>
+                <a href="#calculator" class="bg-white text-brand-brown border border-brand-peach/50 px-8 py-3 rounded-full font-semibold hover:bg-brand-yellow/20 transition">
+                    Calculate Chinchin Order
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-brand-brown">What We Offer</h2>
+            <p class="text-brand-brown/70 mt-2">Crafted with premium ingredients and top hygiene standards</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Custom Cakes -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-yellow hover:shadow-md transition">
+                <div class="w-12 h-12 bg-brand-yellow/50 text-brand-accent rounded-xl flex items-center justify-center text-2xl mb-4">🎂</div>
+                <h3 class="text-xl font-bold text-brand-brown">Custom Cakes</h3>
+                <p class="text-brand-brown/70 mt-2 text-sm">Perfect for birthdays, weddings, anniversaries, and themed celebrations.</p>
+                <ul class="mt-4 space-y-2 text-sm text-brand-brown/70">
+                    <li>• Birthday & Wedding Cakes</li>
+                    <li>• Custom Themed Designs</li>
+                    <li>• Cupcakes & Mini Treats</li>
+                </ul>
+            </div>
+
+            <!-- Fresh Pastries -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-yellow hover:shadow-md transition">
+                <div class="w-12 h-12 bg-orange-100 text-brand-accent rounded-xl flex items-center justify-center text-2xl mb-4">🥧</div>
+                <h3 class="text-xl font-bold text-brand-brown">Delicious Pastries</h3>
+                <p class="text-brand-brown/70 mt-2 text-sm">Freshly baked savory and sweet bites for meetings or snacking.</p>
+                <ul class="mt-4 space-y-2 text-sm text-brand-brown/70">
+                    <li>• Meat Pies & Sausage Rolls</li>
+                    <li>• Breads & Puff-Puff</li>
+                    <li>• Small Chops Packages</li>
+                </ul>
+            </div>
+
+            <!-- Signature Chinchin -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-yellow hover:shadow-md transition">
+                <div class="w-12 h-12 bg-yellow-100 text-brand-accent rounded-xl flex items-center justify-center text-2xl mb-4">✨</div>
+                <h3 class="text-xl font-bold text-brand-brown">Milky Chinchin</h3>
+                <p class="text-brand-brown/70 mt-2 text-sm">Our signature crunchy, creamy treat available in multiple pack sizes.</p>
+                <ul class="mt-4 space-y-2 text-sm text-brand-brown/70">
+                    <li>• Small Pack — ₦2,000</li>
+                    <li>• Big Pack — ₦4,000</li>
+                    <li>• Ziploc Pack — ₦7,000</li>
+                    <li>• Paint Rubber — Custom Quote</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Chinchin Price Calculator -->
+    <section id="calculator" class="py-16 bg-white border-y border-brand-yellow">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-brand-brown">Signature Chinchin Calculator</h2>
+                <p class="text-brand-brown/70 mt-1">Select your preferred sizes and calculate your total instantly</p>
+            </div>
+
+            <div class="bg-brand-cream p-6 sm:p-8 rounded-2xl border border-brand-yellow shadow-sm space-y-6">
+                <!-- Size Item 1 -->
+                <div class="flex items-center justify-between gap-4 border-b border-brand-yellow pb-4">
+                    <div>
+                        <h4 class="font-bold text-brand-brown">Small Pack</h4>
+                        <p class="text-xs text-brand-brown/60">₦2,000 / pack</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <button onclick="updateQty('small', -1)" class="w-8 h-8 rounded-full bg-white border border-brand-peach/50 font-bold hover:bg-brand-yellow">-</button>
+                        <span id="qty-small" class="w-6 text-center font-bold text-brand-brown">0</span>
+                        <button onclick="updateQty('small', 1)" class="w-8 h-8 rounded-full bg-white border border-brand-peach/50 font-bold hover:bg-brand-yellow">+</button>
+                    </div>
+                </div>
+
+                <!-- Size Item 2 -->
+                <div class="flex items-center justify-between gap-4 border-b border-brand-yellow pb-4">
+                    <div>
+                        <h4 class="font-bold text-brand-brown">Big Pack</h4>
+                        <p class="text-xs text-brand-brown/60">₦4,000 / pack</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <button onclick="updateQty('big', -1)" class="w-8 h-8 rounded-full bg-white border border-brand-peach/50 font-bold hover:bg-brand-yellow">-</button>
+                        <span id="qty-big" class="w-6 text-center font-bold text-brand-brown">0</span>
+                        <button onclick="updateQty('big', 1)" class="w-8 h-8 rounded-full bg-white border border-brand-peach/50 font-bold hover:bg-brand-yellow">+</button>
+                    </div>
+                </div>
+
+                <!-- Size Item 3 -->
+                <div class="flex items-center justify-between gap-4 border-b border-brand-yellow pb-4">
+                    <div>
+                        <h4 class="font-bold text-brand-brown">Ziploc Pack</h4>
+                        <p class="text-xs text-brand-brown/60">₦7,000 / pack</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <button onclick="updateQty('ziploc', -1)" class="w-8 h-8 rounded-full bg-white border border-brand-peach/50 font-bold hover:bg-brand-yellow">-</button>
+                        <span id="qty-ziploc" class="w-6 text-center font-bold text-brand-brown">0</span>
+                        <button onclick="updateQty('ziploc', 1)" class="w-8 h-8 rounded-full bg-white border border-brand-peach/50 font-bold hover:bg-brand-yellow">+</button>
+                    </div>
+                </div>
+
+                <!-- Total Summary -->
+                <div class="flex items-center justify-between pt-2">
+                    <span class="text-lg font-bold text-brand-brown">Estimated Total:</span>
+                    <span id="total-price" class="text-2xl font-extrabold text-brand-accent">₦0</span>
+                </div>
+
+                <button onclick="sendWhatsAppOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2 shadow-sm">
+                    <span>Order via WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="order" class="bg-brand-darkbrown text-brand-cream py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center mb-4">
+                <img src="1000597778.jpg" alt="Siya's Cakes and More Logo" class="w-16 h-16 rounded-full object-cover border-2 border-brand-peach">
+            </div>
+            <h3 class="text-2xl font-bold">Siya's Cakes and More</h3>
+            <p class="text-brand-yellow/80 text-sm mt-1">Delivering sweet joy across Abuja, Nigeria</p>
+            <p class="text-xs text-brand-yellow/50 mt-6">&copy; 2026 Siya's Cakes and More. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        const prices = {
+            small: 2000,
+            big: 4000,
+            ziploc: 7000
+        };
+
+        const quantities = {
+            small: 0,
+            big: 0,
+            ziploc: 0
+        };
+
+        function updateQty(size, change) {
+            quantities[size] = Math.max(0, quantities[size] + change);
+            document.getElementById(`qty-${size}`).innerText = quantities[size];
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            const total = (quantities.small * prices.small) + 
+                          (quantities.big * prices.big) + 
+                          (quantities.ziploc * prices.ziploc);
+            document.getElementById('total-price').innerText = `₦${total.toLocaleString()}`;
+        }
+
+        function sendWhatsAppOrder() {
+            const total = (quantities.small * prices.small) + 
+                          (quantities.big * prices.big) + 
+                          (quantities.ziploc * prices.ziploc);
+
+            if (total === 0) {
+                alert('Please add at least one item to your order.');
+                return;
+            }
+
+            let message = "Hello Siya's Cakes and More! I'd like to place an order for Signature Milky Chinchin:%0A";
+            if (quantities.small > 0) message += `- Small Pack (₦2,000): ${quantities.small}%0A`;
+            if (quantities.big > 0) message += `- Big Pack (₦4,000): ${quantities.big}%0A`;
+            if (quantities.ziploc > 0) message += `- Ziploc Pack (₦7,000): ${quantities.ziploc}%0A`;
+            message += `%0ATotal: ₦${total.toLocaleString()}%0A%0A Please confirm availability and delivery to my location in Abuja!`;
+
+            
+            const phoneNumber = "2348160820046"; 
+            window.open(`https://wa.me/${+2348160820046}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
